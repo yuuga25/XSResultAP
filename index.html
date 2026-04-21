@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/b23dd96997961653e2825455633aac82.loader.js";
       var config = {
-        dataUrl: buildUrl + "/a201df6c69f360bc190b56c0615838d5.data.unityweb",
+        dataUrl: buildUrl + "/46d7ee667c4bd3485e3d9e18c1aaed32.data.unityweb",
         frameworkUrl: buildUrl + "/cd8801aad7f84c5790fd5abf10c93513.framework.js.unityweb",
-        codeUrl: buildUrl + "/db90d413dc5135a1b01f8cca0d40b99b.wasm.unityweb",
+        codeUrl: buildUrl + "/481e6bf61f11277210cb2db838fd3262.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "XSResult",
         productName: "XSResult",
@@ -117,7 +117,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
               }).catch((message) => {
                 alert(message);
